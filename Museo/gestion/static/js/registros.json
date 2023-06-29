@@ -1,0 +1,12 @@
+  
+[  
+    { "id": 1,    "nombre": "valor_nombre",
+    "apellidos": "valor_apellidos",
+    "correo": "valor_correo",
+    "celular": "valor_celular",
+     "contrasenia": "valor_contrasenia"  },
+     { "id": 2,    "nombre": "otro_nombre", 
+       "apellidos": "otro_apellidos",
+       "correo": "otro_correo", 
+       "celular": "otro_celular", 
+       "contrasenia": "otro_contrasenia"  }]

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous">
+  </script>
+  {% load static%}
+  <script src="js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="{% static '../static/imagenes/logo.png'%}">
+  <link href="{% static '../static/styles/style1.css'%}" rel="stylesheet" type="text/css">
+  <link href="{% static '../static/styles/gallery-grid.css'%}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid"> 
+      <a class="navbar-brand"  href="{% url 'home' %}"><img src="{% static '../static/imagenes/logo.png'%}" alt="logo" width="180px"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}" >Nosotros&nbsp;</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'arte' %}">Artistas&nbsp;</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'pinturas' %}">Pinturas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Esculturas' %}">Esculturas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Orfebreria' %}">Orfebreria</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Tejidos' %}">Tejidos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Otros' %}">Otros</a></li>
+            </ul>
+            
+          </li>
+        
+        </ul>
+        <br>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="buscar en nuestra tienda" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar&nbsp;</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+      <br>
+      
+<div class="container gallery-container">
+  <a href="Caso_Grupo_Cero.html" class="flecha" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/>
+  </svg></a>
+    <h2>Nosotros</h2>
+    <p class="page-description text-center">En nuestra tienda, nos apasiona brindar una experiencia única a nuestros clientes al ofrecerles una cuidadosa selección de obras de arte de alta calidad. Desde pinturas hasta esculturas, pasando por Orfebreria y Telares, nuestra colección es una muestra diversa de la creatividad y el talento de artistas locales e internacionales. Además, nos enorgullece contar con un equipo de expertos en arte que están siempre dispuestos a brindar asesoramiento personalizado y compartir sus conocimientos con todos nuestros visitantes. En nuestra tienda, buscamos fomentar la apreciación y el amor por el arte en todas sus formas, creando un espacio donde la inspiración y la creatividad florezcan. ¡Ven y descubre el maravilloso mundo del arte en nuestra tienda!  </p>
+    <h2>Nuestros Artistas</h2>
+    <div class="tz-gallery">
+  
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <p >Hiroto Tanaka</p>
+                <a class="lightbox" href="{% url 'japones' %}">
+                    <img src="{% static '../static/imagenes/japones.jpg'%}"alt="Hiroto">
+                </a>
+                
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <p >Rocio Pinto</p>
+                <a class="lightbox" href="../images/bridge.jpg">
+                    <img src="{% static '../static/imagenes/mujer.jpg.crdownload'%}" alt="Rocio">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <p >Andreas Müller</p>
+                <a class="lightbox" href="../images/tunnel.jpg">
+                    <img src="{% static '../static/imagenes/suizo.webp'%}" alt="Andres">
+                </a>
+            </div>
+    </div>
+  
+  </div>
+  
+</div>
+<div class="container1">
+  <button type="button" class="btn btn-warning" id="artistas">Soporte</button>
+</div>
+<div class="alert alert-success" role="alert">
+  <div id="listaartistas"></div>
+</div>
+
+
+
+</body>
+</html>

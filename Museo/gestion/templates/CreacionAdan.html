@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de Adán</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous">
+  </script>
+  {% load static%}
+  <script src="js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="{% static '../static/imagenes/logo.png'%}">
+    
+    <link href="{% static '../static/styles/style2.css'%}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid"> 
+          <a class="navbar-brand"  href="{% url 'home' %}"><img src="{% static '../static/imagenes/logo.png'%}" alt="logo" width="180px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+    
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}" >Nosotros&nbsp;</a>  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'arte' %}">Artistas&nbsp;</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'pinturas' %}">Pinturas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Esculturas' %}">Esculturas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Orfebreria' %}">Orfebreria</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Tejidos' %}">Tejidos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Otros' %}">Otros</a></li>
+                </ul>
+                
+              </li>
+            
+            </ul>
+            <br>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="buscar en nuestra tienda" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar&nbsp;</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="contenedor">
+        <h1><u> Creacion de Adan </u></h1>
+        <div class="imagen">
+            <img style="border: 3px solid black" ; src="{% static '../static/imagenes/CreacionAdan.jpg'%}"  width="800" >
+        </div>
+        <br><br>
+        <hr>
+
+
+        <ul>
+
+
+
+            <li>
+                Bajo un cielo estrellado y en el más absoluto silencio, un hombre con una lámpara de gas busca un lugar
+                a la orilla de un río para colocar su caballete. La figura que se mueve entre las sombras es Vincent van
+                Gogh, un pintor obsesionado por trasladar la poética de la noche al lienzo; el río es el Ródano a su
+                paso por Arlés (Francia), y la fecha, septiembre de 1888.La noche estrellada sobre el Ródanoes su primer
+                intento de pintar los colores de la noche al aire libre, un intento que culminaría un año después en
+                laLa noche estrellada
+            </li><br><br>
+            <li>
+                Material: Óleo y Lienzo
+            </li><br><br>
+            <li>
+                Précio: $105.000
+            </li>
+        </ul>
+        <div class="botonlug">
+            <a class="boton" href="http://laweb.com" target="_blank">Comprar</a>
+        </div>
+        <br><br>
+
+    </div>
+    <br>
+</div>
+<div class="container1">
+  <button type="button" class="btn btn-warning" id="artistas">Soporte</button>
+</div>
+<div class="alert alert-success" role="alert">
+  <div id="listaartistas"></div>
+</div>
+
+
+
+
+</body>
+
+</html>

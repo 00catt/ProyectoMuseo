@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generador Random</title>
+  </head>
+  <body>
+    <h1>Random Artwork Generator</h1>
+    <button onclick="getArtwork()">Get Artwork</button>
+    <div id="artwork"></div>
+
+    <script>
+      async function getArtwork() {
+        // Obtener el token de autenticación
+        const response = await fetch(
+          'https://api.artsy.net/api/tokens/xapp_token?client_id=309c08c7dcb42e89e4ca&client_secret=0518c6b2dc10b98cc8c401e3e91651f9',
+          { method: 'POST' }
+        );
+        const { token } = await response.json();
+
+        // Hacer una solicitud a la API de Artsy para obtener una obra de arte aleatoria
+        const artworkResponse = await fetch(
+          'https://api.artsy.net/api/artworks?sample=1',
+          {
+            headers: {
+              'X-Xapp-Token': token,
+              'Accept': 'application/vnd.artsy-v2+json'
+            }
+          }
+        );
+        const { _links: { permalink: { href: permalinkUrl } }, title, image_versions, image_url } = await artworkResponse.json();
+
+        // Mostrar la obra de arte en la página.
+        const artworkDiv = document.getElementById('artwork');
+        artworkDiv.innerHTML = `
+          <a href="${permalinkUrl}">
+            <h2>${title}</h2>
+            <img src="${image_url || ''}" alt="${title}" width="400">
+          </a>
+        `;
+      }
+    </script>
+  </body>
+</html>

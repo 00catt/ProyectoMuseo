@@ -1,0 +1,39 @@
+[
+      {
+        "nombre": "juan",
+        "apellido": "Pérez",
+        "email": "juan.perez@gmail.com",
+        "telefono": "555-1234-5541",
+        "area": "Soporte de compros"
+      },
+      {
+        "nombre": "maria",
+        "apellido": "García",
+        "email": "maria.garcia@hotmail.com",
+        "telefono": "555-5678-5451",
+        "area": "Soporte"
+        
+      },
+      {
+        "nombre": "pedro",
+        "apellido": "Sánchez",
+        "email": "pedro.sanchez@yahoo.com",
+        "telefono": "555-9012-2516",
+        "area": "Soporte de usuarios"
+      },
+      {
+        "nombre": "anna",
+        "apellido": "martines",
+        "email": "ana.sanchez@yahoo.com",
+        "telefono": "555-9012-2516",
+        "area": "Soporte de socios" 
+      },
+      {
+        "nombre": "max",
+        "apellido": "escobar",
+        "email": "max.escobar@yahoo.com",
+        "telefono": "555-5465-3574",
+        "area": "Soporte" 
+      }
+    ]
+  

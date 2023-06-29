@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    {% load static%}
+  <link rel="shortcut icon" href="{% static '../static/imagenes/logo.png'%}">
+  <link href="{% static '../static/styles/style1.css'%}" rel="stylesheet" type="text/css">
+  <link href="{% static '../static/styles/gallery-grid.css'%}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid"> 
+      <a class="navbar-brand"  href="{% url 'home' %}"><img src="{% static '../static/imagenes/logo.png'%}" alt="logo" width="180px"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}" >Nosotros&nbsp;</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'arte' %}">Artistas&nbsp;</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'pinturas' %}">Pinturas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Esculturas' %}">Esculturas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Orfebreria' %}">Orfebreria</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Tejidos' %}">Tejidos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'Otros' %}">Otros</a></li>
+            </ul>
+            
+          </li>
+        
+        </ul>
+        <br>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="buscar en nuestra tienda" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar&nbsp;</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+     
+<br>
+      <div class="container gallery-container">
+        <a href="sobre_nosotros.html" class="flecha" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/>
+        </svg></a>
+        <h2>Hiroto Tanaka</h2>
+        <p class="page-description text-right">
+          Hiroto Tanaka es un joven japonés de 27 años apasionado por la creación de objetos únicos y hermosos. Desde muy temprana edad descubrió su talento en el mundo de la artesanía y comenzó a explorar diversas técnicas y materiales. Con el tiempo, se especializó en la creación de objetos de ofreberia y joyas.
+
+          Tanaka se inspira en la belleza natural que lo rodea, como las montañas y ríos cercanos a su hogar. Su habilidad para combinar materiales y texturas en sus creaciones es lo que hace que sus obras sean tan especiales y apreciadas por quienes las poseen.
+          
+          En su tiempo libre, Tanaka disfruta de la jardinería y la pesca, dos actividades que lo mantienen en contacto con la naturaleza y le permiten seguir inspirándose en ella. Su trabajo ha sido exhibido en varias exposiciones de arte y artesanía, y ha ganado varios premios por su originalidad y calidad.</p>
+  
+        <div class="tz-gallery">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" >
+                     <img src= "{% static '../static/imagenes/japones.jpg'%}" alt="Hiroto">
+                    </a>
+                 
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <a class="lightbox" >
+                   <img src="{% static '../static/imagenes/orfebreria2.jpg'%}"  alt="Hiroto">
+                  </a>
+               
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" >
+                 <img src="{% static '../static/imagenes/orfebreria1.avif'%}"  alt="Hiroto">
+                </a>
+             
+          </div>
+      </div>
+    </div>
+<br>
+<p>Necesitas inspiracion?</p>
+
+<center>
+  <button type="button" class="btn btn-primary btn-lg" onclick="getArtwork()" style="display: inline-block;">Buscar</button>
+ 
+</center>
+
+
+  <center>  <div id="artwork"></div></center>
+      <br>
+</body>
+</html>
+
+
+
+<script>
+  async function getArtwork() {
+    // Obtener el token de autenticación
+    const response = await fetch(
+      'https://api.artsy.net/api/tokens/xapp_token?client_id=309c08c7dcb42e89e4ca&client_secret=0518c6b2dc10b98cc8c401e3e91651f9',
+      { method: 'POST' }
+    );
+    const { token } = await response.json();
+
+    // Hacer una solicitud a la API de Artsy para obtener una obra de arte aleatoria
+    const artworkResponse = await fetch(
+      'https://api.artsy.net/api/artworks?sample=1',
+      {
+        headers: {
+          'X-Xapp-Token': token,
+          'Accept': 'application/vnd.artsy-v2+json'
+        }
+      }
+    );
+    const { _links: { permalink: { href: permalinkUrl } }, title, image_versions, image_url } = await artworkResponse.json();
+
+    // Mostrar la obra de arte en la página.
+    const artworkDiv = document.getElementById('artwork');
+    artworkDiv.innerHTML = `
+      <a href="${permalinkUrl}" target="_blank">
+        <h2>${title}</h2>
+        <img src="${image_url || ''}" alt="${title}" width="400">
+      </a>
+    `;
+  }
+</script>

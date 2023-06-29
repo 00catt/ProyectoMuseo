@@ -1,0 +1,164 @@
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #424242;
+  text-shadow: 3px 3px 1px rgb(193, 197, 199);
+  font-size: 50px;
+  text-align: center;
+
+
+}
+
+h2 {
+  margin: 0;
+  padding: 20px 0;
+  color: #2b2a2a;
+  text-shadow: 3px 3px 1px rgb(193, 197, 199);
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0px 3px 3px rgb(255, 255, 255), 0px -1px 1px rgba(71, 69, 69, 0.3);
+
+}
+
+
+  html {
+    font-family: "Open Sans", sans-serif;
+    /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+  body {
+    width: 100%;
+    background-image: url("../imagenes/fondo.webp");
+    padding: 0 30px 30px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    
+
+  }
+
+
+
+/*menu*/
+.navbar {
+  background-image: url("../imagenes/fondoceniza.jpg");
+  border-bottom: 3px solid black;
+  width: 100%;
+  height: 60px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+
+.contenedor {
+  margin-top: 90px;
+  margin-right: 50px;
+  font-size: 13px;
+  background-image: url(../imagenes/probando.avif);
+  border: solid 3px;
+  padding-left: 10px;
+  margin-left: 50px;
+
+}
+
+
+.imagen { 
+text-align: center;
+margin-top: 50px;
+
+}
+
+
+.boton {
+  border: 1px solid #2e518b;
+  /*anchura, estilo y color borde*/
+  padding: 10px;
+  /*espacio alrededor texto*/
+  background-color: #0c0c0c;
+  /*color botón*/
+  color: #ffffff;
+  /*color texto*/
+  text-decoration: none;
+  /*decoración texto*/
+  text-transform: uppercase;
+  /*capitalización texto*/
+  font-family: 'Helvetica', sans-serif;
+  /*tipografía texto*/
+  border-radius: 50px;
+  /*bordes redondos*/
+}
+
+.botonlug{
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 80px;
+
+}
+
+.form-control {
+  font-size: 15px;
+  width: 500px;
+  height: 40px;
+
+}
+
+/*
+otras palabras en el menu */
+.nav-link {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin: 3;
+  word-spacing: 10px;
+  text-shadow: 0.5px 0.5x 0.5px rgb(0, 0, 0);
+  font-size: 13px;
+
+}
+
+
+.d-block {
+  width: 100%;
+  width: 800px;
+  height: 100%;
+  height: 500px;
+  border: 3px solid rgb(0, 0, 0);
+
+}
+
+
+
+.alert {
+  display: none;
+}
+.container1 {
+  text-align: right;
+  margin-right:100px;
+  padding: 20px ;
+}
+
+.container1 {
+  text-align: right;
+  margin-left: 100px;
+}
+#listaartistas > div {
+  display: inline-block;
+  max-width: 250px; /* Puedes ajustar este valor según tus necesidades */
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
