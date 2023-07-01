@@ -54,7 +54,7 @@ h2 {
 
 /*menu*/
 .navbar {
-  background-image: url("../imagenes/fondoceniza.jpg");
+  background-image: url('https://pixabay.com/es/illustrations/mármol-antecedentes-blanco-resumen-2398946/');
   border-bottom: 3px solid black;
   width: 100%;
   height: 60px;
@@ -68,7 +68,7 @@ h2 {
   margin-top: 90px;
   margin-right: 50px;
   font-size: 13px;
-  background-image: url(../imagenes/probando.avif);
+  background-image: url('https://pixabay.com/es/illustrations/mármol-antecedentes-blanco-resumen-2398946/');
   border: solid 3px;
   padding-left: 10px;
   margin-left: 50px;
