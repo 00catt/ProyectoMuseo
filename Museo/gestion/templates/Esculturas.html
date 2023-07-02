@@ -68,41 +68,28 @@
 </head>
 
 <body>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <p>¡Felicitaciones! Has ganado un descuento especial. Ingresa el código "YMELSHW3421" en
-        tu próxima compra y disfruta de nuestros productos a precios aún más bajos. No pierdas esta oportunidad
-        única de ahorrar en tu próxima compra. ¡Gracias por elegir nuestros productos!</p>
-
-      <button type="button" class="btn btn-primary" id="cerrarModal">Cerrar</button>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static '../static/imagenes/logo.png'%}" alt="logo"
-          width="70px" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}">Nosotros&nbsp;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'arte' %}">Artistas&nbsp;</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'pinturas' %}">Pinturas</a></li>
-              <li>
-                <hr class="dropdown-divider">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p>¡Felicitaciones! Has obtenido un descuento exclusivo. Al momento de realizar tu siguiente compra, utiliza el código "YMELSHW3421"  
+            y benefíciate de precios reducidos en nuestros productos. Aprovecha esta oportunidad excepcional para ahorrar en tu próxima adquisición. 
+            Agradecemos sinceramente tu elección al seleccionar nuestros productos. ¡Gracias por tu preferencia!</p>
+          
+          <button type="button" class="btn btn-primary" id="cerrarModal">Cerrar</button>
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid"> 
+          <a class="navbar-brand"  href="{% url 'home' %}"><img src="{% static '../static/imagenes/logo.png'%}" alt="logo" width="180px"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+    
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}" >Nosotros&nbsp;</a>  
               </li>
               <li><a class="dropdown-item" href="{% url 'Esculturas' %}">Esculturas</a></li>
               <li>
