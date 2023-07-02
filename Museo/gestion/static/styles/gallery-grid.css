@@ -44,7 +44,7 @@ p{
 
 .tz-gallery .lightbox img {
     width: 100%;
-    height: 250px;
+    height: 80%;
     /*margin-bottom: 30px;*/
     margin: 10px;
     transition: 0.2s ease-in-out;
@@ -68,6 +68,9 @@ p{
 }
 
 .card img{
-    margin: 0px !important
+    margin: 0px !important;
+    width: 100% !important;
+    height: 250px !important;
+
 }
 
