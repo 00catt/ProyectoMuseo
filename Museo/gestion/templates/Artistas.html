@@ -18,6 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35d3dbe6af.js" crossorigin="anonymous"></script>
+
         
     <link rel="shortcut icon" href="{% static '../static/imagenes/logo.png'%}">
     <link href="{% static '../static/styles/style3.css'%}" rel="stylesheet" type="text/css">
@@ -70,7 +72,7 @@
         <br><br>
 
     <div class="container gallery-container">
-        <a href="Caso_Grupo_Cero.html" class="flecha" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+        <a href="{% url 'home' %}" class="flecha" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/>
           </svg></a>
 
@@ -79,33 +81,33 @@
       
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/park.jpg">
-                        <img src="{% static '..https://www.deviantart.com/coolarts223/art/Fantasy-anime-girl-with-fishes-Vertical-wallpaper-965877019'%}" height="300" alt="Park">
+                    <a class="lightbox" href="">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4fe7f71a-687b-421e-b544-1716ae4025a5/dg15ghi-d5146841-05fb-4d8d-b958-4989e916ba44.jpg/v1/fill/w_600,h_900,q_75,strp/waifu_by_neoninjaslash_dg15ghi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRmZTdmNzFhLTY4N2ItNDIxZS1iNTQ0LTE3MTZhZTQwMjVhNVwvZGcxNWdoaS1kNTE0Njg0MS0wNWZiLTRkOGQtYjk1OC00OTg5ZTkxNmJhNDQuanBnIiwiaGVpZ2h0IjoiPD05MDAiLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzRmZTdmNzFhLTY4N2ItNDIxZS1iNTQ0LTE3MTZhZTQwMjVhNVwvbmVvbmluamFzbGFzaC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.ghmpvX9p1aKlGlk9j9qiuK3KX7a8zTiFm6MV85E2BZQ" height="300" alt="Park">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/bridge.jpg">
-                        <img src="{% static '../static/imagenes/japones.jpg'%}"  height="300" alt="Bridge">
+                    <a class="lightbox" href="">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3c11a4e-961b-47ec-8f72-acebce4c4562/dfz23hi-9c43ee2a-d80e-452a-8917-b5568208d774.jpg/v1/fill/w_1280,h_1819,q_75,strp/fantasy_anime_girl__kokomi__with_fishes__wallpaper_by_coolarts223_dfz23hi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxOSIsInBhdGgiOiJcL2ZcL2MzYzExYTRlLTk2MWItNDdlYy04ZjcyLWFjZWJjZTRjNDU2MlwvZGZ6MjNoaS05YzQzZWUyYS1kODBlLTQ1MmEtODkxNy1iNTU2ODIwOGQ3NzQuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0hXH3ogXXWqDJuGxFbPzmINGUFXvSiEhSdDwof-VqsE"  height="300" alt="Bridge">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../images/tunnel.jpg">
-                        <img src="{% static '../static/imagenes/suizo.webp'%}" height="300" alt="Tunnel">
+                    <a class="lightbox" href="">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3c11a4e-961b-47ec-8f72-acebce4c4562/dfz23h7-8ea09829-db1f-4f82-8b39-015299844b4a.jpg/v1/fill/w_1280,h_1819,q_75,strp/fantasy_anime_girl_with_fishes__vertical_wallpaper_by_coolarts223_dfz23h7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxOSIsInBhdGgiOiJcL2ZcL2MzYzExYTRlLTk2MWItNDdlYy04ZjcyLWFjZWJjZTRjNDU2MlwvZGZ6MjNoNy04ZWEwOTgyOS1kYjFmLTRmODItOGIzOS0wMTUyOTk4NDRiNGEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.R269OjUYWUgRYoTLX9Ynw9dlMlVcq-2icUAYl_oaTK4" height="300" alt="Tunnel">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/coast.jpg">
-                        <img src="{% static '../static/imagenes/mujer.jpg.crdownload'%}" height="300" alt="Coast">
+                    <a class="lightbox" href="">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3c11a4e-961b-47ec-8f72-acebce4c4562/dfz23l3-406f930c-f5a0-4319-8431-39c9b4551d37.jpg/v1/fill/w_1280,h_1819,q_75,strp/fantasy_anime_girl_with_fishes__vertical_wallpaper_by_coolarts223_dfz23l3-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxOSIsInBhdGgiOiJcL2ZcL2MzYzExYTRlLTk2MWItNDdlYy04ZjcyLWFjZWJjZTRjNDU2MlwvZGZ6MjNsMy00MDZmOTMwYy1mNWEwLTQzMTktODQzMS0zOWM5YjQ1NTFkMzcuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xu41SB1a-1-ZuExEZzJ2p878NZrl5nUgBvaru4f2EwI" height="300" alt="Coast">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/rails.jpg">
-                        <img src="{% static '../static/imagenes/MessiArtista.jpg'%}" height="300" alt="Rails">
+                    <a class="lightbox" href="">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3c11a4e-961b-47ec-8f72-acebce4c4562/dfz23kv-11c3f184-01aa-4054-b4d1-3fd11d0cebd4.jpg/v1/fill/w_1280,h_1819,q_75,strp/anime_girl_with_pink_hair__vertical_wallpaper_by_coolarts223_dfz23kv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxOSIsInBhdGgiOiJcL2ZcL2MzYzExYTRlLTk2MWItNDdlYy04ZjcyLWFjZWJjZTRjNDU2MlwvZGZ6MjNrdi0xMWMzZjE4NC0wMWFhLTQwNTQtYjRkMS0zZmQxMWQwY2ViZDQuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.OgtmMTYRlDOK9bvmOy6lTOwp3nc2IaBsbxDfufZYF8I" height="300" alt="Rails">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/rails.jpg">
-                        <img src="{% static '../static/imagenes/iniesta.jpg'%}" height="300" alt="Rails">
+                    <a class="lightbox" href="">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3c11a4e-961b-47ec-8f72-acebce4c4562/dfz23hx-a4385df5-f91a-4f6c-a37c-ecf0af742ff5.jpg/v1/fill/w_1280,h_1819,q_75,strp/fantasy_anime_girl_with_fishes__vertical_wallpaper_by_coolarts223_dfz23hx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxOSIsInBhdGgiOiJcL2ZcL2MzYzExYTRlLTk2MWItNDdlYy04ZjcyLWFjZWJjZTRjNDU2MlwvZGZ6MjNoeC1hNDM4NWRmNS1mOTFhLTRmNmMtYTM3Yy1lY2YwYWY3NDJmZjUuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qDpFdEM-ek5JoaZEtpT_OHZrbOr4w3gIYVoRW52tGdo" height="300" alt="Rails">
                     </a>
                 </div>
           
@@ -119,6 +121,8 @@
         <a type="button" class="btn btn-warning"  href="{% url 'registro' %}">Solicitud</a>
       </div>
       
-
+      <footer>
+        {% include 'footer.html' %}
+      </footer>
 </body>
 </html>

@@ -14,6 +14,7 @@
         {% load static%}
     <link rel="shortcut icon" href="{% static '../static/imagenes/logo.png'%}">
     <link href="{% static '../static/styles/Validacion.css'%}" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/35d3dbe6af.js" crossorigin="anonymous"></script>
     
 
 </head>
@@ -100,7 +101,9 @@
     {% load static%}
     <script src="{% static '../static/js/form.js'%}"></script>
 
-
+    <footer>
+      {% include 'footer.html' %}
+    </footer>
 </body>
 
 </html>

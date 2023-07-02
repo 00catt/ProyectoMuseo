@@ -8,6 +8,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/gestionCurso.css' %}">
+    <script src="https://kit.fontawesome.com/35d3dbe6af.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-info">
@@ -128,13 +130,8 @@
         </div>
     </div>
 
-<footer class="footer mt-auto">
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2023 Copyright:
-              <a class="text-dark" href="https://mdbootstrap.com/">Seccion 13 Desarrollo Web</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+    <footer>
+        {% include 'footer.html' %}
+      </footer>
     </body>
 </html>
