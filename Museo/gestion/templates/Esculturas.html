@@ -91,32 +91,35 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}" >Nosotros&nbsp;</a>  
               </li>
-              <li><a class="dropdown-item" href="{% url 'Esculturas' %}">Esculturas</a></li>
-              <li>
-                <hr class="dropdown-divider">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'arte' %}">Artistas&nbsp;</a>
               </li>
-              <li><a class="dropdown-item" href="{% url 'Orfebreria' %}">Orfebreria</a></li>
-              <li>
-                <hr class="dropdown-divider">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'pinturas' %}">Pinturas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Esculturas' %}">Esculturas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Orfebreria' %}">Orfebreria</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Tejidos' %}">Tejidos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'Otros' %}">Otros</a></li>
+                </ul>
+                
               </li>
-              <li><a class="dropdown-item" href="{% url 'Tejidos' %}">Tejidos</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="{% url 'Otros' %}">Otros</a></li>
+            
             </ul>
-
-          </li>
-
-        </ul>
-        <br>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="buscar en nuestra tienda" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar&nbsp;</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+            <br>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="buscar en nuestra tienda" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar&nbsp;</button>
+            </form>
+          </div>
+        </div>
+      </nav>
   <div class="contenedor">
     <h1> Esculturas </h1>
 
